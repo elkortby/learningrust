@@ -2,7 +2,7 @@ use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
 
-pub fn game () {
+pub fn run () {
     
     let secret = rand::thread_rng().gen_range(1, 101);
     let mut cpt = 0;

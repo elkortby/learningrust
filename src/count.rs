@@ -6,7 +6,7 @@ struct Cli {
     #[structopt(parse(from_os_str))]
     path: std::path::PathBuf
 }
-pub fn count() {
+pub fn run() {
     let args = Cli::from_args();
     let content = std::fs::read_to_string(&args.path).expect("could not read file");
     let mut cpt = 0;

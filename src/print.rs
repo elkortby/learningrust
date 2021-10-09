@@ -1,4 +1,4 @@
-pub fn print() {
+pub fn run() {
 	// Print to console
 	println!("Hello World!");
 
